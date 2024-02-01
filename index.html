@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Download Form</title>
+</head>
+<body>
+    <h1>Image Download Form</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="google-drive-link">Google Drive Link:</label>
+        <input type="text" id="google-drive-link" name="google-drive-link" required>
+        <br>
+        <label for="user-photo">Upload Your Photo:</label>
+        <input type="file" id="user-photo" name="user-photo" accept="image/*" required>
+        <br>
+        <input type="submit" value="Download Images">
+    </form>
+</body>
+</html>
